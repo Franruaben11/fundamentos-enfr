@@ -1,5 +1,7 @@
 # Fundamentos ENFR 2018
 
+**Informe:** https://docs.google.com/document/d/1ELUgr4DkXi67-vZ29fEjLcLC8v2O2YSWFIo8HmbdViI/edit?usp=sharing
+
 Análisis de la Encuesta Nacional de Factores de Riesgo (ENFR) 2018 de Argentina,
 coordinada por INDEC y la Secretaría de Gobierno de Salud.
 
