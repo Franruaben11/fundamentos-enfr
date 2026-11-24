@@ -30,11 +30,7 @@ La notebook lee la base cruda desde el mismo directorio y genera
 ## Decisiones metodológicas
 
 Los códigos `99` de variables categóricas se tratan como valores faltantes.
-No se imputan masivamente IMC, glucemia, presión sistólica ni perímetro de
-cintura: esas mediciones pertenecen a submuestras y se analizan con casos
-completos para cada hipótesis. El IMC utilizado es el valor `imc_bima` provisto
-por la base; el cálculo desde peso y talla se usa únicamente como control de
-consistencia.
+Para los datos faltantes, creamos `imc_general` priorizando la medición física (`imc_bima`) y completando con el autorreporte (`imc`), imputamos `promedio_sistolica` con KNN ($k=5$), y rellenamos hábitos y categóricas con mediana o moda según el caso. La `glucosa` (~82% de nulos por ser de submuestra bioquímica) no se imputó y se analizó solo con casos completos.
 
 Los análisis son no ponderados. Aunque la base incluye factores de expansión,
 los resultados se interpretan como resultados de la muestra analizada y no como
